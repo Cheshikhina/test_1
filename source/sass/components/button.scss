@@ -1,0 +1,119 @@
+.button {
+  @include button;
+  @include font (1, 1.5625, 700, 1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  padding-top: 13px;
+  color: $white;
+  background-image: $lg_button;
+  background-color: $accent1_0;
+  border-radius: $br_button;
+  letter-spacing: $ls_3;
+  z-index: 1;
+  transition: $transition;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: $accent1_0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: $transition;
+  }
+
+  &:not(.button--dark):active {
+    &::before {
+      opacity: $opacity;
+    }
+  }
+}
+
+.button__icon_burger {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin-top: 2px;
+  margin-right: auto;
+  background-color: $white;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: inherit;
+    height: inherit;
+    background-color: $white;
+    left: 0;
+  }
+
+  &::before {
+    top: 8px;
+  }
+
+  &::after {
+    top: -8px;
+  }
+}
+
+.button__icon_arrow {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  transform: rotate(90deg) translateX(1px);
+
+  svg {
+    width: 6px;
+    height: 11px;
+    stroke: $white;
+    fill: none;
+  }
+}
+
+.button--catalog {
+  justify-content: start;
+  margin-right: 1.8%;
+  padding: 16px 15px 19px;
+  padding-left: 6%;
+  padding-right: 9.3%;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: $ls_09;
+  text-transform: none;
+}
+
+.button--dark {
+  text-transform: uppercase;
+  background-color: $dark;
+  background-image: none;
+
+  &:active {
+    color: $dark;
+    background-color: $accent3_0;
+    opacity: $opacity;
+  }
+}
+
+@media (min-width: $no_mobile) {
+
+  .button:not(.button--dark):hover,
+  .button:not(.button--dark):focus {
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  .button--dark:hover,
+  .button--dark:focus {
+    color: $dark;
+    background-color: $accent3_0;
+  }
+}

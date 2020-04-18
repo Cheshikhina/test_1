@@ -1,0 +1,44 @@
+@charset "utf-8";
+@import "normalize";
+
+// abstracts
+@import "./abstracts/variables";
+@import "./abstracts/mixin";
+@import "./abstracts/visually_hidden";
+@import "./abstracts/animations";
+
+// libs for plugins
+@import "./libs/swiper";
+
+// general
+@import "./general/fonts";
+@import "./general/scaffolding";
+
+// components
+@import "./components/wrapper";
+@import "./components/container";
+@import "./components/button";
+@import "./components/btn";
+@import "./components/image";
+@import "./components/special";
+@import "./components/line";
+@import "./components/underline";
+@import "./components/card";
+@import "./components/news";
+
+// blocks
+@import "./blocks/header";
+@import "./blocks/header_first";
+@import "./blocks/header_middle";
+@import "./blocks/header_last";
+@import "./blocks/footer";
+@import "./blocks/search";
+@import "./blocks/preamble";
+@import "./blocks/catalog";
+@import "./blocks/block";
+@import "./blocks/subscription";
+@import "./blocks/discount";
+@import "./blocks/company";
+
+// ui - удалить потом
+@import "./ui";

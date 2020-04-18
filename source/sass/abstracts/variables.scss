@@ -1,0 +1,82 @@
+// sizes
+$mobile_min: 320px;
+$mobile_max: 768px;
+$tablet_max: 1023px;
+$desktop_max: 1170px;
+$no_mobile: 769px;
+
+// color scheme
+$white: #ffffff;
+$text_sale: rgba($white, 0.22);
+$placeholder: #6f6f6f;
+$arrow: #b4b4b4;
+$background_catalog: #e5e5e5;
+$background: #efefef;
+$error: #ff0000;
+$dark: #1d1e1e;
+
+$header_decor: #6a6a6a;
+$header_link: #c3c3c3;
+$header_form: #dddddd;
+
+$footer_text: rgba($white, 0.502);
+$footer_line: rgba($white, 0.102);
+$footer_logo: #6d6d6d;
+$footer_link: #8e8f8f;
+$footer_line: #343535;
+$footer_social: #676767;
+
+$accent1_0: #009ee2;
+$accent1_1: #5dd5fe;
+$accent1_2: #0295d5;
+$accent1_3: #009be1;
+$accent1_4: #009add;
+$accent1_5: #0086c0;
+$accent1_6: #4bd1fe;
+$accent1_7: #3dc3f2;
+
+$accent2_0: #313633;
+$accent3_0: #ffb400;
+$accent4_0: #00963f;
+
+$lg_button: linear-gradient(270deg, rgb(1, 135, 193) 0%, rgb(58, 192, 239) 100%);
+$lg_button_hover: linear-gradient(270deg, rgb(1, 135, 193) 0%, rgb(1, 135, 193) 100%);
+$lg_main: linear-gradient(180deg, rgb(2, 198, 84) 0%, rgb(0, 164, 235) 79%);
+
+$bs_catalog: 0 36px 20px -30px $arrow;
+$bs_catalog_hover: 0 36px 20px -30px $footer_link;
+$bs_main: 0 70px 20px -60px $arrow;
+$bs_item: 0 29px 20px -20px $arrow;
+$bs_item_hover: 0 29px 20px -20px $footer_link;
+$bs_sale: 0 15px 25px -5px $arrow;
+$bs_sale_hover: 0 15px 25px -5px $footer_link;
+$bs_news: 0 20px 25px -15px $arrow;
+$bs_news_hover: 0 20px 25px -15px $footer_link;
+$bs_discount: 0 78px 22px -66px $arrow;
+$bs_discount_hover: 0 78px 22px -66px $footer_link;
+$bs_card: 0 13px 20px -10px $arrow;
+$bs_card_hover: 0 13px 20px -10px $footer_link;
+$bs_card_top: 0 -2px 0 -1px $background;
+$bs_card_top_hover: 0 -2px 0 -1px $arrow;
+
+// another
+$transition: all 0.3s;
+$opacity: 0.87;
+$br_button: 3px;
+$br_form: 4px;
+$ls_02: 0.2px;
+$ls_03: 0.3px;
+$ls_07: 0.7px;
+$ls_09: 0.9px;
+$ls_1: 1px;
+$ls_12: 1.2px;
+$ls_16: 1.6px;
+$ls_2: 2px;
+$ls_3: 3px;
+$ls_4: 4px;
+$ls_43: 4.3px;
+$unit: 0rem;
+
+// retina
+$retina_dpi: 144dpi;
+$retina_dppx: 1.5dppx;

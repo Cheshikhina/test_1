@@ -1,0 +1,59 @@
+.subscription {
+  width: 100%;
+  background-color: $background;
+  padding-bottom: 43px;
+}
+
+.subscription__title {
+  @include font(1.5, 2.25, 700, 0);
+  margin: 0;
+  margin-bottom: 31px;
+  text-align: center;
+  letter-spacing: -0.1px;
+}
+
+.subscription form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 58px;
+  overflow: hidden;
+
+  span {
+    position: absolute;
+    top: 0;
+    color: $error;
+  }
+}
+
+.subscription input {
+  @include font(1.125, 2.25, 600, 0);
+  flex: 1 1;
+  display: flex;
+  align-items: center;
+  padding: 11px 31px;
+  font-family: "Panton", "Arial", sans-serif;
+  outline: none;
+  appearance: none;
+  border: 0 solid transparent;
+  color: $dark;
+  letter-spacing: $ls_02;
+}
+
+.subscription input::placeholder {
+  @include font(1.125, 2.25, 600, 0);
+  opacity: 1;
+  color: $placeholder;
+  letter-spacing: $ls_02;
+  transition: $transition;
+}
+
+.subscription input:focus::placeholder {
+  opacity: 0;
+}
+
+.subscription__button {
+  min-height: 59px;
+  margin-top: -1px;
+  padding: 13px 5% 15px;
+}

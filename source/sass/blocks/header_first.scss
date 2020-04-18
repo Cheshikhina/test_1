@@ -1,0 +1,83 @@
+.header_first {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 45px;
+  color: $header_link;
+  background-color: $dark;
+}
+
+.header_first__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 15px;
+  align-self: center;
+}
+
+.header_first__nav {
+  grid-column: span 8;
+
+  a {
+    @include font(0.875, 1.5625, 400, 0);
+    position: relative;
+    margin-right: 8.7%;
+    color: $header_link;
+    letter-spacing: $ls_02;
+    transition: $transition;
+
+    &:not(:last-child)::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      top: 49%;
+      right: -38px;
+      transform: translateY(-50%);
+      background-color: transparent;
+      border: 1.5px solid $header_decor;
+      border-radius: 50%;
+    }
+
+    &:active {
+      color: $accent1_0;
+      opacity: $opacity;
+    }
+  }
+}
+
+.header_first__text {
+  @include font(0.8125, 1.5625, 400, 0);
+  grid-column: 9 / 11;
+  justify-self: end;
+  margin: 0;
+  margin-right: 6.5%;
+  letter-spacing: $ls_02;
+}
+
+.header_first__phone {
+  @include font(1.25, 1.5625, 700, 0);
+  grid-column: 11 / last;
+  margin-left: 3%;
+  color: $accent1_0;
+  letter-spacing: $ls_07;
+  transition: $transition;
+
+  &:active {
+    color: $accent3_0;
+    opacity: $opacity;
+  }
+}
+
+@media (min-width: $no_mobile) {
+
+  .header_first__nav a:hover,
+  .header_first__nav a:focus {
+    color: $accent1_0;
+  }
+
+  .header_first__phone:hover,
+  .header_first__phone:focus {
+    color: $accent3_0;
+  }
+}

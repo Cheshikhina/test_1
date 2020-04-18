@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="devStrong">
+  <title>devStrong</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+  <ul class="ui">
+    <li class="ui__item">
+      <button class="btn" type="button" aria-label="Перелистнуть вперед">
+        <span class="btn__icon_arrow" aria-hidden="true">
+          <svg width="5" height="8">
+            <use xlink:href="./img/sprite.svg#icon_arrow2"></use>
+          </svg>
+        </span>
+      </button>
+    </li>
+    <li class="ui__item">
+      <button class="button button--catalog" type="button">
+        <span class="button__icon_burger" aria-hidden="true"></span>
+        Каталог товаров
+        <span class="button__icon_arrow" aria-hidden="true">
+          <svg width="6" height="11">
+            <use xlink:href="./img/sprite.svg#icon_arrow2"></use>
+          </svg>
+        </span>
+      </button>
+    </li>
+    <li class="ui__item">
+      <a class="button button--dark" href="#">Купить</a>
+    </li>
+    <li class="ui__item" style="width: 846px">
+      <div class="special special--main">
+        <h3 class="special__title">Специальные предложения</h3>
+        <p class="special__desc">катушка Adrenalin 7300&nbsp;BC</p>
+        <p class="special__price"><span>5 600</span> р.</p>
+        <a href="#" class="special__button button button--dark">Купить</a>
+        <div class="special__image image">
+          <picture>
+            <source type="image/webp" srcset="./img/main_special__desktop@1x.webp 1x, ./img/main_special__desktop@2x.webp 2x">
+
+            <!-- 1х: 333px; 2x: 666px -->
+            <img src="img/main_special__desktop@1x.png" srcset="img/main_special__desktop@2x.png 2x" alt="катушка Adrenalin" width="333" height="426">
+          </picture>
+        </div>
+      </div>
+    </li>
+    <li class="ui__item" style="width: 555px">
+      <a href="#" class="special special--discount">
+        <h3 class="special__title">Скидка <span>до&nbsp;15&nbsp;декабря</span> на&nbsp;все лески</h3>
+        <p class="btn special__discount_btn" aria-hidden="true">
+          <span class="btn__icon_arrow">
+            <svg width="5" height="8">
+              <use xlink:href="./img/sprite.svg#icon_arrow2"></use>
+            </svg>
+          </span>
+        </p>
+        <p class="special__sale">-30%</p>
+        <div class="special__image special__image--discount1 image">
+          <picture>
+            <source type="image/webp" srcset="./img/sale_1__desktop@1x.webp 1x, ./img/sale_1__desktop@2x.webp 2x">
+
+            <!-- 1х: 172px; 2x: 342px -->
+            <img src="img/sale_1__desktop@1x.png" srcset="img/sale_1__desktop@2x.png 2x" alt="Леска" width="172" height="297">
+          </picture>
+        </div>
+      </a>
+    </li>
+    <li class="ui__item" style="width: 303px">
+      <div class="special special--sale">
+        <h3 class="special__title">Акция</h3>
+        <p class="special__desc">удилище Adrenalin 7300&nbsp;BC</p>
+        <p class="special__sale">-30%</p>
+        <p class="special__price"><span>5 600</span> р.</p>
+        <div class="special__image special__image--promo2 image">
+          <picture>
+            <source type="image/webp" srcset="./img/novelty_sale__desktop@1x.webp 1x, ./img/novelty_sale__desktop@2x.webp 2x">
+
+            <!-- 1х: 210px; 2x: 420px -->
+            <img src="img/novelty_sale__desktop@1x.png" srcset="img/novelty_sale__desktop@2x.png 2x" alt="удилище Adrenalin" width="210" height="269">
+          </picture>
+        </div>
+      </div>
+    </li>
+    <li class="ui__item" style="width: 303px">
+      <a href="#" class="special special--item">
+        <h3 class="special__title">новые приманки</h3>
+        <p class="special__desc">для подледной ловли</p>
+        <p class="btn" aria-hidden="true">
+          <span class="btn__icon_arrow">
+            <svg width="5" height="8">
+              <use xlink:href="./img/sprite.svg#icon_arrow2"></use>
+            </svg>
+          </span>
+        </p>
+        <div class="special__image image">
+          <picture>
+            <source type="image/webp" srcset="./img/main_1__desktop@1x.webp 1x, ./img/main_1__desktop@2x.webp 2x">
+
+            <!-- 1х: 160px; 2x: 320px -->
+            <img src="img/main_1__desktop@1x.png" srcset="img/main_1__desktop@2x.png 2x" alt="приманка ввиде рыбок" width="160" height="171">
+          </picture>
+        </div>
+      </a>
+    </li>
+    <li class="ui__item" style="width: 303px">
+      <div class="card">
+        <div class="card__image special__image--link1 image">
+          <span class="card__item card__item--discount">скидка</span>
+          <span class="card__item card__item--hit">хит</span>
+          <picture>
+            <source type="image/webp" srcset="./img/bestsellers_1__desktop@1x.webp 1x, ./img/bestsellers_1__desktop@2x.webp 2x">
+
+            <!-- 1х: 236px; 2x: 472px -->
+            <img src="img/bestsellers_1__desktop@1x.jpg" srcset="img/bestsellers_1__desktop@2x.jpg 2x" alt="удилище Adrenalin" width="236" height="199">
+          </picture>
+        </div>
+        <div class="card__inner">
+          <p class="card__icons">
+            <span class="card__icon_star" aria-label="рейтинг данного товара - 5 звезд"></span>
+            <span class="card__icon_heart" aria-label="этот товар отложен вами"></span>
+          </p>
+          <h3 class="card__title">Удилище <span>Matze Koch Rollen</span></h3>
+          <div class="card__price">
+            <p class="card__price_current"><span>3 240</span> р.</p>
+            <p class="card__price_last"><span>6200</span> р.</p>
+            <p class="card__price_profit">Ваш выгода <span>3 200</span> р.</p>
+          </div>
+          <a href="#" class="button card__button">в&nbsp;корзину</a>
+        </div>
+      </div>
+    </li>
+    <li class="ui__item" style="width: 360px">
+      <a href="#" class="news">
+        <time class="news__date" datetime="2019-02-13">13.02.2019</time>
+        <div class="news__image image">
+          <picture>
+            <source type="image/webp" srcset="./img/news_1__desktop@1x.webp 1x, ./img/news_1__desktop@2x.webp 2x">
+
+            <!-- 1х: 360px; 2x: 720px -->
+            <img src="img/news_1__desktop@1x.jpg" srcset="img/news_1__desktop@2x.jpg 2x" alt="Радующийся своему улову мужчина" width="360" height="209">
+          </picture>
+        </div>
+        <h3 class="news__title">Презентация нового продукта</h3>
+        <p class="news__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на&nbsp;русском языке, а&nbsp;начинающему оратору отточить навык публичных...</p>
+        <span class="news__all">подробнее</span>
+      </a>
+    </li>
+  </ul>
+
+  <script src="./js/vendor.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

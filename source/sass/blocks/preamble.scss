@@ -1,0 +1,39 @@
+.preamble {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1.5%;
+  padding-bottom: 75px;
+}
+
+.preamble__catalog {
+  grid-column: span 3;
+}
+
+.preamble__inner {
+  grid-column: 4 / last;
+  margin-left: 1%;
+  width: inherit;
+}
+
+.preamble__swiper {
+  position: relative;
+  overflow: hidden;
+  padding-top: 30px;
+  padding-bottom: 27px;
+}
+
+.preamble__swiper {
+  &>.preamble__special_pagination {
+    bottom: 32px + 27px;
+    padding-left: 4.6%;
+    text-align: left;
+    z-index: 2;
+  }
+}
+
+.preamble__links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3.6%;
+  margin: 0 0 27px;
+}

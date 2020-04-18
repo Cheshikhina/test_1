@@ -1,0 +1,24 @@
+.company {
+  margin-bottom: 108px;
+}
+
+.company__title {
+  @include title_section;
+  margin-bottom: 53px;
+}
+
+.company__text {
+  display: block;
+  column-count: 2;
+  column-gap: 3%;
+
+  p {
+    @include font (0.875, 1.5625, 600, 0);
+    margin: 0;
+    letter-spacing: $ls_03;
+
+    &:not(:last-of-type) {
+      margin-bottom: 25px;
+    }
+  }
+}

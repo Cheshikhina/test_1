@@ -1,0 +1,51 @@
+.btn {
+  @include button;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $dark;
+  transition: $transition;
+
+  &:active {
+    background-color: $accent3_0;
+    opacity: $opacity;
+
+    svg {
+      stroke: $dark;
+    }
+  }
+}
+
+.btn__icon_arrow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0;
+
+  svg {
+    width: 5px;
+    height: 8px;
+    stroke: $white;
+    fill: none;
+  }
+}
+
+.btn--prev {
+  .btn__icon_arrow {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+
+@media (min-width: $no_mobile) {
+
+  .btn:hover,
+  .btn:focus {
+    background-color: $accent3_0;
+
+    svg {
+      stroke: $dark;
+    }
+  }
+}

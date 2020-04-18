@@ -1,0 +1,194 @@
+.catalog {
+  @include list;
+  margin-top: 30px;
+  width: 100% - 1.8%;
+  margin-right: 1.8%;
+  z-index: 6;
+  align-self: start;
+  box-shadow: $bs_catalog;
+  background-color: $background;
+
+  li {
+    position: relative;
+    min-height: 47px;
+
+    &:first-child a {
+      border-radius: $br_button $br_button 0 0;
+
+      &:hover,
+      &:focus {
+        border-radius: $br_button 0 0 0;
+      }
+    }
+
+    &:last-child a {
+      border-radius: 0 0 $br_button $br_button;
+
+      &:hover,
+      &:focus {
+        border-radius: 0 0 0 $br_button;
+      }
+    }
+  }
+
+  a {
+    @include font(0.9375, 2.9, 700, 0);
+    position: relative;
+    display: flex;
+    color: $dark;
+    background-color: $background;
+    border-bottom: 1px solid $white;
+    padding-left: 23%;
+    letter-spacing: $ls_07;
+    transition: $transition;
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      top: 50%;
+      left: 24px;
+      transform: translateY(-50%);
+      background-color: transparent;
+      border: 2px solid $dark;
+      border-radius: 50%;
+      transition: $transition;
+    }
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 17px;
+  }
+
+  svg {
+    fill: none;
+    stroke: $arrow;
+    stroke-width: 2px;
+    transition: $transition;
+  }
+}
+
+.catalog--opened {
+  position: absolute;
+  height: 0;
+  margin-top: 0;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  overflow: hidden;
+  opacity: 0;
+  z-index: -5;
+  transition: $transition;
+
+  a {
+    padding-left: 27%;
+    border-bottom: 1px solid $background_catalog;
+  }
+
+  &:hover,
+  &:focus {
+    left: calc(100% + 15px);
+    opacity: 1;
+    z-index: 2;
+    height: auto;
+    overflow: visible;
+    background-color: $background_catalog;
+    box-shadow: $bs_catalog_hover;
+
+    a {
+      background-color: $background_catalog;
+      border-bottom: 1px solid $background_catalog;
+
+      &:hover,
+      &:focus {
+        color: $accent1_0;
+        text-decoration: underline;
+        text-decoration-color: $accent1_0;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 15px;
+      height: 46px;
+      top: 0;
+      right: 100%;
+      background-color: $background_catalog;
+      z-index: 2;
+    }
+  }
+}
+
+.catalog a:hover,
+.catalog a:focus {
+  color: $accent1_0;
+  background-color: $background_catalog;
+  border-bottom: 1px solid $background_catalog;
+
+  &::before {
+    border: 1.5px solid $accent1_0;
+  }
+
+  svg {
+    stroke: $accent1_0;
+  }
+
+  &+ul {
+    left: calc(100% + 15px);
+    z-index: 2;
+    height: auto;
+    overflow: visible;
+    background-color: $background_catalog;
+    opacity: 1;
+
+    li:last-of-type {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        height: 36px;
+        width: 100%;
+        box-shadow: $bs_catalog;
+      }
+    }
+
+    a {
+      background-color: $background_catalog;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 15px;
+      height: 46px;
+      top: 0;
+      right: 100%;
+      background-color: $background_catalog;
+      z-index: 2;
+    }
+  }
+}
+
+a.catalog__link_js {
+  color: $accent1_0;
+  background-color: $background_catalog;
+  border-bottom: 1px solid $background_catalog;
+
+  &::before {
+    border: 1.5px solid $accent1_0;
+  }
+
+  svg {
+    stroke: $accent1_0;
+  }
+}
